@@ -1,6 +1,6 @@
 public class Student extends Person{
 private int id;
-private Sting major;
+private String major;
 
   //constructors
   public Student(){
