@@ -1,7 +1,17 @@
 
 
+/**
+ * Tester class for the files used in ALA 1
+ * @author Andrew Pearce
+ * @version 0.1
+ *Date of creation: August 26, 2021
+ *Date of last modification: August 31, 2021
+ */
 public class Test{
 
+/**
+ * Main method to create instances of each class related to the Person class and test the sortArray method
+ */
 public static void main(String args[]){
   Person[] people = new Person[4];
   people[0] = new Person("Helen Brown",
@@ -34,11 +44,21 @@ public static void main(String args[]){
   printArray(people);
   }
   
-  public static void printArray(Person[] list){
+  /**
+   * Prints to the terminal the persons in an array
+ * @param list of objects Person to be printed
+ * @return none
+ */
+public static void printArray(Person[] list){
     for(int i=0; i<list.length; i++){
       System.out.println(list[i].toString());
     }
   }
+    /**
+     * Sorts through the array by first letter in the persons name
+     * @param list of Person objects to sort through
+     * @return none
+     */
     public static void sortArray(Person[] list){
       for(int i=0; i<list.length; i++){
         int minIndex = i;
